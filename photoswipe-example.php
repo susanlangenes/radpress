@@ -2,8 +2,30 @@
 /** Photoswipe WordPress implementation with ACF Gallery field
 * What you need: WordPress v4+, ACF v5, Photoswipe http://photoswipe.com/
 **/
+// First add this CSS to your stylesheet, or wth, just leave it here.
+<style>
+/* photoswipe gallery */
+.my-gallery {
+  max-width: 314px;
+  float: left;
+  margin-right: 24px;
+}
+.my-gallery img {
+  width: 100%;
+  height: auto;
+}
+.my-gallery figure {
+  display: block;
+	float: left;
+	margin: 0 7px 0px 0;
+	width: 150px;
+}
+.my-gallery figcaption {
+  display: none;
+}
+</style>
 
-//first set up your ACF Gallery field.  In this case the name of the gallery field is 'images'.  Confusing, sorry.
+//Now set up your ACF Gallery field.  In this case the name of the gallery field is 'images'.  Confusing, sorry.
 // More here: http://www.advancedcustomfields.com/resources/gallery/
 //Then write your HTML with all the fun schema.org gobbeldygook.
 
